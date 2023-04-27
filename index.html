@@ -1,130 +1,61 @@
 <html>
 
+  <form>
 
 <form action="https://api.sheetmonkey.io/form/paKsY3sfVXoiYo72AcCRKc" method="post">
+<form action="#" method="post">
+  <label for="cliente">Cliente:</label>
+  <input type="text" id="cliente" name="cliente"><br>
 
+  <label for="bairro">Bairro:</label>
+  <input type="text" id="bairro" name="bairro"><br>
 
-<span style="font-size: 20px;">
-    <style>
-  .textarea-estilizada {
-    background-color: #f2f2f2;
-    border: 2px solid #ccc;
-    font-size: 16px;
-    padding: 10px;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-  }
-</style>
+  <label for="telefone">Telefone:</label>
+  <input type="tel" id="telefone" name="telefone"><br><br>
 
+  <label for="data principal">Data Pincipal:</label>
+  <input type="date" id="datap" name="data"><br>
 
-
-
-<h1> Registro de Presença </h1>
-
-<p>
-    
-    <form action="processar_formulario.php" method="POST">
-    <label for="data">Data da Reunião:</label>
-    <input type="date" id="data" name="data" class="textarea-estilizada" required>
-    
- <p>               
-                
-  <label for="regional">Selecionar a regional:</label>
-  <select id="regional" name="regional" class="textarea-estilizada">
-    <option value="Em Branco"> </option>
-    <option value="Grande Recife">Grande Recife</option>
-    <option value="Fortaleza">Fortaleza</option>
-    <option value="Piauí">Piauí</option>
-    </select>
+  <label for="horario principal">Horário Principal:</label>
+  <select id="horariop" name="horario">
+   
+    <option value="07:00">07:00</option>
+    <option value="08:00">08:00</option>
+    <option value="09:00">09:00</option>
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+    <option value="12:00">12:00</option>
+    <option value="13:00">13:00</option>
+    <option value="14:00">14:00</option>
+    <option value="15:00">15:00</option>
+    <option value="16:00">16:00</option>
+    <option value="17:00">17:00</option>
+    <option value="18:00">18:00</option>
+  </select><br><br>
   
-<h5>
-Regional Fortaleza
-</h5>
-                <input type="checkbox"  name="IAT" value="Girlâncio Furtado" style="width: 20px; height: 20px;">Girlâncio Furtado<br>
-                <input type="checkbox" name="Comercial 1" value="Carlos Nogueira" style="width: 20px; height: 20px;">Carlos Nogueira<br>
-                <input type="checkbox" name="NGC" value="Alisson da Silva" style="width: 20px; height: 20px;">Alisson da Silva<br>
-                <input type="checkbox" name="Marketing" value="Darllan Soares" style="width: 20px; height: 20px;">Darllan Soares<br>
-                <input type="checkbox" name="Manutenção" value="Leonardo Aquino" style="width: 20px; height: 20px;">Leonardo Aquino<br>
-                <input type="checkbox" name="Agendamento" value="Daniele Freitas" style="width: 20px; height: 20px;">Daniele Freitas<br>
-                
-                <h5>
-Regional Recife
-</h5>
-                <input type="checkbox" name="IAT" value="Anderson dos Santos"style="width: 20px; height: 20px;">Anderson dos Santos<br>
-                <input type="checkbox" name="NGC" value="Elizabete Almeida"style="width: 20px; height: 20px;">Elizabete Almeida<br>
-                <input type="checkbox" name="Marketing" value="Rodolfo Queiroz"style="width: 20px; height: 20px;">Rodolfo Queiroz<br>
-                <input type="checkbox" name="Comercial 2" value="Tiago Henrique"style="width: 20px; height: 20px;">Tiago Henrique<br>
-                <input type="checkbox" name="Comercial 1" value="Silvio Farias"style="width: 20px; height: 20px;">Silvio Farias<br>
-                <input type="checkbox" name="Manutenção" value="Reudson Carlos"style="width: 20px; height: 20px;">Reudson Carlos<br>
-                <input type="checkbox" name="Agendamento" value="Daniele Freitas"style="width: 20px; height: 20px;">Daniele Freitas<br>
-                
-        
-                <h5>
-Regional Piauí
-</h5>
+   <label for="data secundaria">Data Secundária:</label>
+  <input type="date" id="datas" name="data"><br>
+
+  <label for="horario principal">Horário Secundario:</label>
+  <select id="horarios" name="horario">
+   
+    <option value="07:00">07:00</option>
+    <option value="08:00">08:00</option>
+    <option value="09:00">09:00</option>
+    <option value="10:00">10:00</option>
+    <option value="11:00">11:00</option>
+    <option value="12:00">12:00</option>
+    <option value="13:00">13:00</option>
+    <option value="14:00">14:00</option>
+    <option value="15:00">15:00</option>
+    <option value="16:00">16:00</option>
+    <option value="17:00">17:00</option>
+    <option value="18:00">18:00</option><br> 
+  </select><br><br>
 
 
-                <input type="checkbox" name="NGC" value="José Gustavo"style="width: 20px; height: 20px;">José Gustavo<br>
-                <input type="checkbox" name="Comercial 1" value="Neto"style="width: 20px; height: 20px;">Neto<br>
-                <input type="checkbox" name="Manutenção" value="Leonardo de Aquino"style="width: 20px; height: 20px;">Leonardo de Aquino<br>
-                <input type="checkbox" name="IAT" value="Miguel Barros"style="width: 20px; height: 20px;">Miguel Barros<br>
-                <input type="checkbox" name="Agendamento" value="Daniele Freitas"style="width: 20px; height: 20px;">Daniele Freitas<br>
-                <input type="checkbox" name="Marketing" value="Amanda Carvalho"style="width: 20px; height: 20px;">Amanda Carvalho<br>
-
-
-                <h5>Seção de convidados:</h5>
-<p>
-<label> Insira o nome do convidado da semana: </label>
-  <input type="text" name="Convidados" placeholder="Digite aqui" class="textarea-estilizada" > <br/>
-<br>
-<br>
-
-  <div style="background-color: #F5F5F5; padding: 20px; border-radius: 10px;">
-
-  <h3 style="color: Orange;">LOGIN</h3>
-
-  
-  <label for="Business Partner">BP:</label>
-  <select id="Business Partner" name="Business Partner"class="textarea-estilizada"> 
-    <option value="Em Branco"> </option>
-    <option value="Thauanne">Thauanne </option>
-    <option value="Wedja" >Wedja</option>
-  </select>
-
-<p> 
-<label for="senha">Digite sua senha:</label>
-<input type="password" list="senhas" name="senha" id="senha" class="textarea-estilizada" required>
-
-<datalist id="senhas">
-  <option value="003232">
-  <option value="001814">
-  <option value="senha3">
-  <option value="senha4">
-</datalist>
-
-
-<style>
-.btn {
-  background-color: #FF5022;
-  border: none;
-  color: white;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #FF5022;
-}
-</style>
-  <input type="hidden" name="Data de Criação" value="x-sheetmonkey-current-date-time" />
-  <input type="submit" class="btn" value="Enviar" />
+  <input type="submit" value="Confirmar marcação">
+</form>
 
   
   </form>
