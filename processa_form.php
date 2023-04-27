@@ -1,4 +1,4 @@
-<php
+<?php
 // Recupera os dados do formulário
 $nome = $_POST['nome'];
 $email = $_POST['email'];
@@ -12,4 +12,4 @@ if (empty($nome) || empty($email)) {
   mail('seuemail@example.com', 'Novo formulário enviado', "Nome: $nome\nEmail: $email");
   header('Location: confirmacao.html');
 }
->
+?>
