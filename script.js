@@ -14,3 +14,26 @@ function listarFilmesNaTela(filme) {
     var elementoFilme = "<img src=" + filme + ">"
     listaFilmes.innerHTML = listaFilmes.innerHTML + elementoFilme
 }
+
+function enviarResposta() {
+  const resposta = document.getElementById('resposta').value;
+  fetch('https://nathaliandm.github.io/brisauge/', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ resposta: resposta })
+  })
+    .then(response => {
+      if (response.ok) {
+        alert('Resposta enviada com sucesso!');
+        document.getElementById('resposta').value = '';
+      } else {
+        alert('Erro ao enviar resposta.');
+      }
+    })
+    .catch(error => {
+      alert('Erro ao enviar resposta.');
+      console.error(error);
+    });
+}
